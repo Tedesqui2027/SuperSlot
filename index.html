@@ -22,31 +22,28 @@
             box-sizing: border-box;
         }
         .conteudo {
-            /* Move todo o conteúdo centralizado 100 pixels para cima */
             transform: translateY(-100px);
-            
-            /* Garante que o texto fique centralizado dentro da nova div */
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
         }
         h1 {
-            font-size: 3.5rem; /* Reduzido em 30% (era 5rem) */
+            font-size: 3.5rem; 
             color: #333;
-            margin-bottom: 42px; /* Reduzido em 30% (era 60px) */
+            margin-bottom: 42px; 
             line-height: 1.2;
         }
         .botao-gigante {
             display: inline-block;
-            padding: 28px 70px; /* Reduzido em 30% (era 40px 100px) */
-            font-size: 2.5rem; /* Reduzido em 30% (era 3.6rem) */
+            padding: 28px 70px; 
+            font-size: 2.5rem; 
             font-weight: bold;
             color: white;
             background-color: #28a745; 
             text-decoration: none; 
-            border-radius: 17px; /* Reduzido em 30% (era 24px) */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra ajustada para a nova proporção */
+            border-radius: 17px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
             transition: background-color 0.3s;
             max-width: 90%; 
             white-space: normal; 
@@ -62,14 +59,14 @@
     <!-- ========================================================== -->
     <meta property="og:title" content="SuperSlot - O melhor Aplicativo Android de Apostas!!!">
     <meta property="og:description" content="Baixe agora e comece a ganhar. O melhor Aplicativo Android de Apostas!!!">
-    <meta property="og:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.jpg">
+    <meta property="og:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
     <meta property="og:url" content="https://tedesqui2027.github.io/SuperSlot/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SuperSlot - O melhor Aplicativo Android de Apostas!!!">
     <meta name="twitter:description" content="Baixe agora e comece a ganhar. O melhor Aplicativo Android de Apostas!!!">
-    <meta name="twitter:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.jpg">
+    <meta name="twitter:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
 
     <!-- ========================================================== -->
     <!-- 2. GOOGLE ANALYTICS (RASTREAMENTO DE ACESSOS)              -->
@@ -85,26 +82,40 @@
     </script>
 
     <!-- ========================================================== -->
-    <!-- 3. REDIRECIONAMENTO AUTOMÁTICO                             -->
+    <!-- 3. REDIRECIONAMENTO INTELIGENTE (FORÇA O APP DO DRIVE)     -->
     <!-- ========================================================== -->
-    <meta http-equiv="refresh" content="1; url=https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/">
+    
+    <!-- Fallback de segurança para navegadores que não rodam JavaScript -->
+    <meta http-equiv="refresh" content="2; url=https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/">
     
     <script type="text/javascript">
+        // Link normal para navegadores web (Computador, iPhone)
+        var linkDriveWeb = "https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/";
+        
+        // Link "Intent" do Android. Ele obriga o sistema a tentar abrir o pacote "com.google.android.apps.docs" (Google Drive)
+        var linkDriveApp = "intent://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/view#Intent;scheme=https;package=com.google.android.apps.docs;action=android.intent.action.VIEW;S.browser_fallback_url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd%2Fview;end";
+        
+        // Identifica se o usuário está no Android
+        var isAndroid = /android/i.test(navigator.userAgent || navigator.vendor || window.opera);
+        var linkFinal = isAndroid ? linkDriveApp : linkDriveWeb;
+
         window.onload = function() {
+            // Troca o link do botão dinamicamente caso seja um Android
+            document.getElementById("btn-baixar").href = linkFinal;
+
+            // Faz o redirecionamento automático
             setTimeout(function() {
-                window.location.href = "https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/";
+                window.location.href = linkFinal;
             }, 1000); 
         };
     </script>
 </head>
 <body>
-    <!-- Bloco agrupado para subir 100px na tela -->
     <div class="conteudo">
-        <!-- Texto reduzido em 30% -->
-        <h1>Redirecionando para o link do Aplicativo, aguarde alguns segundos ou clique no botão:</h1>
+        <h1>Redirecionando para o link do Aplicativo, aguarde alguns segundos ou clique no link</h1>
         
-        <!-- Botão reduzido em 30% -->
-        <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/" class="botao-gigante">BAIXAR APLICATIVO AGORA</a>
+        <!-- Adicionei o id="btn-baixar" para o JavaScript encontrar o botão e alterar o link se for Android -->
+        <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/" id="btn-baixar" class="botao-gigante">BAIXAR APLICATIVO AGORA</a>
     </div>
 </body>
 </html>
