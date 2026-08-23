@@ -5,66 +5,86 @@
     <title>SuperSlot - O melhor Aplicativo Android de Apostas!!!</title>
     
     <!-- ========================================================== -->
+    <!-- ESTILOS VISUAIS PARA O TEXTO E O BOTÃO GIGANTE             -->
+    <!-- ========================================================== -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Faz o conteúdo ocupar a tela inteira */
+            margin: 0;
+            background-color: #f8f9fa; /* Fundo levemente cinza */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem; /* Deixa o texto bem grande */
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .botao-gigante {
+            display: inline-block;
+            padding: 20px 50px;
+            font-size: 1.8rem; /* Letras grandes dentro do botão */
+            font-weight: bold;
+            color: white;
+            background-color: #28a745; /* Cor verde chamativa */
+            text-decoration: none; /* Remove o sublinhado do link */
+            border-radius: 12px; /* Bordas arredondadas */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra para dar profundidade */
+            transition: background-color 0.3s;
+        }
+        .botao-gigante:hover {
+            background-color: #218838; /* Fica mais escuro ao passar o mouse */
+        }
+    </style>
+    
+    <!-- ========================================================== -->
     <!-- 1. META TAGS PARA COMPARTILHAMENTO (WHATSAPP, REDES, ETC)  -->
     <!-- ========================================================== -->
-    
-    <!-- Título Principal (Aplicativos costumam deixar em negrito) -->
     <meta property="og:title" content="SuperSlot - O melhor Aplicativo Android de Apostas!!!">
-    
-    <!-- Subtítulo / Descrição -->
     <meta property="og:description" content="Baixe agora e comece a ganhar. O melhor Aplicativo Android de Apostas!!!">
-    
-    <!-- Imagem de Destaque -->
-    <meta property="og:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.jpg">
-    
-    <!-- URL da página no GitHub Pages -->
+    <meta property="og:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
     <meta property="og:url" content="https://tedesqui2027.github.io/SuperSlot/">
-    
-    <!-- Tipo de conteúdo -->
     <meta property="og:type" content="website">
 
-    <!-- Meta Tags extras para o X (antigo Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SuperSlot - O melhor Aplicativo Android de Apostas!!!">
     <meta name="twitter:description" content="Baixe agora e comece a ganhar. O melhor Aplicativo Android de Apostas!!!">
-    <meta name="twitter:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.jpg">
+    <meta name="twitter:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
 
     <!-- ========================================================== -->
     <!-- 2. GOOGLE ANALYTICS (RASTREAMENTO DE ACESSOS)              -->
     <!-- ========================================================== -->
-    
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_CODIGO_AQUI"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
-        // ATENÇÃO: Substitua G-SEU_CODIGO_AQUI pelo seu ID real do Analytics
         gtag('config', 'G-SEU_CODIGO_AQUI');
     </script>
 
     <!-- ========================================================== -->
     <!-- 3. REDIRECIONAMENTO AUTOMÁTICO                             -->
     <!-- ========================================================== -->
-    
-    <!-- O "1" no content dá 1 segundo para o Analytics registrar a visita antes de sair -->
     <meta http-equiv="refresh" content="1; url=https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/">
     
-    <!-- Fallback em JavaScript para garantir o redirecionamento -->
     <script type="text/javascript">
-        // Aguarda a página carregar (para dar tempo do Analytics funcionar) e depois redireciona
         window.onload = function() {
             setTimeout(function() {
-                // ATENÇÃO: Substitua pelo link para onde o usuário deve ir
                 window.location.href = "https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/";
-            }, 1000); // 1000 milissegundos = 1 segundo de atraso
+            }, 1000); 
         };
     </script>
-
 </head>
 <body>
-    <!-- Mensagem de fallback exibida rapidamente antes do redirecionamento -->
-    <p>Redirecionando para o aplicativo... Se você não for redirecionado automaticamente, <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/">clique aqui</a>.</p>
+    <!-- Texto grande -->
+    <h1>Redirecionando para o link do Aplicativo, aguarde alguns segundos ou clique no link</h1>
+    
+    <!-- Botão gigante apontando para o Google Drive -->
+    <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/" class="botao-gigante">BAIXAR APLICATIVO AGORA</a>
 </body>
 </html>
