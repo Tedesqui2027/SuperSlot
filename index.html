@@ -5,7 +5,7 @@
     <title>SuperSlot - O melhor Aplicativo Android de Apostas!!!</title>
     
     <!-- ========================================================== -->
-    <!-- ESTILOS VISUAIS PARA O TEXTO E O BOTÃO GIGANTE (DOBRADO)   -->
+    <!-- ESTILOS VISUAIS (REDUZIDOS EM 30% E MOVIDOS 100PX ACIMA)   -->
     <!-- ========================================================== -->
     <style>
         body {
@@ -14,32 +14,42 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh; /* min-height garante que caiba se o texto for muito longo */
+            min-height: 100vh;
             margin: 0;
             background-color: #f8f9fa; 
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
         }
+        .conteudo {
+            /* Move todo o conteúdo centralizado 100 pixels para cima */
+            transform: translateY(-100px);
+            
+            /* Garante que o texto fique centralizado dentro da nova div */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
         h1 {
-            font-size: 5rem; /* DOBRADO: Era 2.5rem */
+            font-size: 3.5rem; /* Reduzido em 30% (era 5rem) */
             color: #333;
-            margin-bottom: 60px; /* DOBRADO: Era 30px */
-            line-height: 1.2; /* Ajuda a não embolar as letras se quebrar a linha */
+            margin-bottom: 42px; /* Reduzido em 30% (era 60px) */
+            line-height: 1.2;
         }
         .botao-gigante {
             display: inline-block;
-            padding: 40px 100px; /* DOBRADO: Era 20px 50px */
-            font-size: 3.6rem; /* DOBRADO: Era 1.8rem */
+            padding: 28px 70px; /* Reduzido em 30% (era 40px 100px) */
+            font-size: 2.5rem; /* Reduzido em 30% (era 3.6rem) */
             font-weight: bold;
             color: white;
             background-color: #28a745; 
             text-decoration: none; 
-            border-radius: 24px; /* DOBRADO: Era 12px */
-            box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Sombra maior para acompanhar o tamanho */
+            border-radius: 17px; /* Reduzido em 30% (era 24px) */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra ajustada para a nova proporção */
             transition: background-color 0.3s;
-            max-width: 90%; /* Garante que o botão não ultrapasse a tela do celular */
-            white-space: normal; /* Permite que o texto do botão quebre linha se o celular for estreito */
+            max-width: 90%; 
+            white-space: normal; 
             word-wrap: break-word;
         }
         .botao-gigante:hover {
@@ -88,10 +98,13 @@
     </script>
 </head>
 <body>
-    <!-- Texto grande (Dobrado) -->
-    <h1>Redirecionando para o link do Aplicativo, aguarde alguns segundos ou clique no botão</h1>
-    
-    <!-- Botão gigante (Dobrado) apontando para o Google Drive -->
-    <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/" class="botao-gigante">BAIXAR APLICATIVO AGORA</a>
+    <!-- Bloco agrupado para subir 100px na tela -->
+    <div class="conteudo">
+        <!-- Texto reduzido em 30% -->
+        <h1>Redirecionando para o link do Aplicativo, aguarde alguns segundos ou clique no link</h1>
+        
+        <!-- Botão reduzido em 30% -->
+        <a href="https://drive.google.com/file/d/1u-y2CkuCwHq3ggLUM26f44HUL7-yhBDd/" class="botao-gigante">BAIXAR APLICATIVO AGORA</a>
+    </div>
 </body>
 </html>
