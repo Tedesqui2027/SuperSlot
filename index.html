@@ -5,71 +5,21 @@
     <title>Mantra da Riqueza!!!</title>
     
     <!-- ========================================================== -->
-    <!-- ESTILOS VISUAIS (REDUZIDOS EM 30% E MOVIDOS 100PX ACIMA)   -->
-    <!-- ========================================================== -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa; 
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .conteudo {
-            transform: translateY(-100px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        h1 {
-            font-size: 3.5rem; 
-            color: #333;
-            margin-bottom: 42px; 
-            line-height: 1.2;
-        }
-        .botao-gigante {
-            display: inline-block;
-            padding: 28px 70px; 
-            font-size: 2.5rem; 
-            font-weight: bold;
-            color: white;
-            background-color: #28a745; 
-            text-decoration: none; 
-            border-radius: 17px; 
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
-            transition: background-color 0.3s;
-            max-width: 90%; 
-            white-space: normal; 
-            word-wrap: break-word;
-        }
-        .botao-gigante:hover {
-            background-color: #218838; 
-        }
-    </style>
-    
-    <!-- ========================================================== -->
     <!-- 1. META TAGS PARA COMPARTILHAMENTO (WHATSAPP, REDES, ETC)  -->
     <!-- ========================================================== -->
     <meta property="og:title" content="Mantra da Riqueza">
-    <meta property="og:description" content="Mantra da Riqueza">
+    <meta property="og:description" content="O seu verdadeiro mantra da riqueza">
     <meta property="og:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
     <meta property="og:url" content="https://tedesqui.github.io/rich/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mantra da Riqueza">
-    <meta name="twitter:description" content="Leia todos os dias para alcançar o sucessso financeiro!">
+    <meta name="twitter:description" content="O seu verdadeiro mantra da riqueza">
     <meta name="twitter:image" content="https://tedesqui2027.github.io/SuperSlot/imagem-share.png">
 
     <!-- ========================================================== -->
-    <!-- 2. GOOGLE ANALYTICS (RASTREAMENTO DE ACESSOS ATUALIZADO)   -->
+    <!-- 2. GOOGLE ANALYTICS (RASTREAMENTO DE ACESSOS)              -->
     <!-- ========================================================== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-702Q7N6K9F"></script>
     <script>
@@ -81,39 +31,17 @@
     </script>
 
     <!-- ========================================================== -->
-    <!-- 3. REDIRECIONAMENTO INTELIGENTE (FORÇA O APP DO DRIVE)     -->
+    <!-- 3. REDIRECIONAMENTO IMEDIATO (SEM TEMPO DE ESPERA)         -->
     <!-- ========================================================== -->
     
-    <!-- Fallback de segurança para navegadores que não rodam JavaScript -->
-    <meta http-equiv="refresh" content="2; url=https://tedesqui.github.io/rich/">
+    <!-- Fallback imediato (0 segundos) caso o navegador bloqueie JS -->
+    <meta http-equiv="refresh" content="0; url=https://tedesqui.github.io/rich/">
     
     <script type="text/javascript">
-        // Link normal para navegadores web (Computador, iPhone)
-        var linkDriveWeb = "https://tedesqui.github.io/rich/";
-        
-        // Link "Intent" do Android. Ele obriga o sistema a tentar abrir o app do Google Drive
-        var linkDriveApp = "https://tedesqui.github.io/rich/";
-        
-        // Identifica se o usuário está no Android
-        var isAndroid = /android/i.test(navigator.userAgent || navigator.vendor || window.opera);
-        var linkFinal = isAndroid ? linkDriveApp : linkDriveWeb;
-
-        window.onload = function() {
-            // Troca o link do botão dinamicamente caso seja um Android
-            document.getElementById("btn-baixar").href = linkFinal;
-
-            // Faz o redirecionamento automático
-            setTimeout(function() {
-                window.location.href = linkFinal;
-            }, 10); 
-        };
+        // Redireciona instantaneamente substituindo o histórico (evita loop ao clicar em "voltar")
+        window.location.replace("https://tedesqui.github.io/rich/");
     </script>
 </head>
 <body>
-    <div class="conteudo">
-        <h1>Redirecionando para o site, aguarde alguns segundos ou clique no link</h1>
-        
-        <a href="https://tedesqui.github.io/rich/" id="btn-baixar" class="botao-gigante">ACESSAR AGORA</a>
-    </div>
 </body>
 </html>
